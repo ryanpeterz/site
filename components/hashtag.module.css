@@ -1,0 +1,12 @@
+.hashTag {
+  font-size: 14px;
+  color: #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  transition: color .15s ease-in-out;
+}
+
+.hashTag:hover {
+  color: #ccccd5;
+}
