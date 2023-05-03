@@ -12,6 +12,7 @@ export default function Home() {
         style={{color: "whitesmoke"}}
       >
       Liberty implies privacy.
+      <div style={{height: "80px"}}/>
       <Experience/>
       <Affiliations/>
       <Link href="mailto:contact@ryanpeterz.com">contact@ryanpeterz.com</Link>
