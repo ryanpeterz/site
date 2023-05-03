@@ -33,7 +33,6 @@ export default function Study(props: Props){
   }
 
   return (
-    <div>
       <div className={styles.card} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <div className={styles.cardTitleLine}>
           <div className={styles.cardTitleText}>{props.title}</div>
@@ -50,6 +49,5 @@ export default function Study(props: Props){
           {props.tags.map(tag => hashtag(tag))}
         </div>
       </div>
-    </div>
   );
 }

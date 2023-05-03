@@ -96,14 +96,16 @@ export function Content() {
     }
   };
 
-  return <Graph
-    graph={graph}
-    options={options}
-    events={events}
-    getNetwork={(network: any) => {
-      //  if you want access to vis.js network api you can set the state in a parent component using this property
-    }}
-  />
+  return <div className="affiliations">
+    <Graph
+      graph={graph}
+      options={options}
+      events={events}
+      getNetwork={(network: any) => {
+        //  if you want access to vis.js network api you can set the state in a parent component using this property
+      }}
+    />
+  </div>
 }
 
 export default function Affiliations() {

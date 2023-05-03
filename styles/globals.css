@@ -46,6 +46,16 @@ div.vis-tooltip {
   z-index: 5;
 }
 
-div.bio {
-  color: lightblue
+.experience {
+  margin: 20px;
+  display: grid;
+  justify-content: center;
+  min-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(max(280px, 40%), 1fr));
+  column-gap: 10px;
+  row-gap: 24px;
+}
+
+.affiliations {
+  min-width: 100%;
 }

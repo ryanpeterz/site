@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './work.module.css';
 import hashtag from './hashtag';
 
@@ -22,18 +22,8 @@ export default function Work(props: Props){
   const onMouseLeave = () => {
     setState({open: false});
   }
-  const descriptor = () => {
-    if(state.open){
-      return <>
-        <hr/>
-        <p className={styles.cardBody}>{props.desc}</p>
-      </>
-    }
-    return <></>
-  }
 
   return (
-    <div>
       <div className={styles.card} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <div className={styles.cardTitleLine}>
           <div className={styles.cardTitleText}>{props.title}</div>
@@ -44,12 +34,13 @@ export default function Work(props: Props){
           {props.start.getFullYear() + "." + String(props.start.getMonth()+1).padStart(2, "0")
           + " -> " +
           props.end.getFullYear() + "." + String(props.end.getMonth()+1).padStart(2, "0")}</p>
-        {descriptor()}
+        <div style={{width: "fit-content"}}>
+          <p className={styles.cardBody} hidden={!state.open}>{props.desc}</p>
+        </div>
         <div className={styles.detail}>{props.details.join(' ')}</div>
         <div className={styles.hashTagContainer}>
           {props.tags.map(tag => hashtag(tag))}
         </div>
       </div>
-    </div>
   );
 }
