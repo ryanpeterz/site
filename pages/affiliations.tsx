@@ -31,7 +31,7 @@ const COGTYPE = [
 
 const aff: Array<{name: string, href: string|null, type: number, desc: string}> = [
   {name: "peterz", href: null, type: HYBRID, desc: "Cryptography, Machine Learning & Research Engineering"},
-  {name: "keel", href: "https://posts.tjkeel.com", type: WORDCEL, desc: "Trust & Compliance"},
+  {name: "keel", href: "https://tjkeel.com", type: WORDCEL, desc: "Ethereum Infrastructure"},
   {name: "yao", href: "https://lihan-yao.medium.com", type: HYBRID, desc: "Information Theory & Blockchain Analysis"},
   {name: "barron", href: "https://tbarron.xyz", type: ROTATOR, desc: "Category Theory & Software Engineering"},
   /*{name: "steve", href: null, desc: "Event Planning & Media Coordination"}*/
